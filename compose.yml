@@ -1,0 +1,8 @@
+services:
+  mysql-lab7: # container name
+    image: mysql:latest
+    ports:
+      - '6033:3306' # host/container
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=booksDb
